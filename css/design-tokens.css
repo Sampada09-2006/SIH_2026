@@ -1,0 +1,115 @@
+/* ==========================================================================
+   DRISHTI DESIGN TOKENS
+   STRICT RULE: ABSOLUTE ZERO BLUE AND ZERO BLACK
+   Base: Warm Ivory, White, Light Neutral Sand
+   Accents: Saffron, Golden Amber, Ochre
+   Text: Charcoal Gray, Slate Gray (No True Black)
+   Status: Muted Green (Verified), Amber/Orange (Caution), Coral Red (Emergency)
+   ========================================================================== */
+
+:root {
+  /* Surface & Background Colors (Zero Blue, Zero Black) */
+  --bg-app: #FAF9F6;              /* Warm ivory base */
+  --bg-surface: #FFFFFF;          /* Pure crisp white card surface */
+  --bg-surface-alt: #F5F4EF;      /* Subtle warm sand */
+  --bg-surface-elevated: #FFFFFF; /* Modal / Flyout background */
+  --bg-surface-sunken: #EFECE6;   /* Input backgrounds, wells */
+  --bg-banner: #FFFBEB;           /* Warm gold tinted alert banner */
+  --bg-header: #FFFFFF;           /* Crisp top nav */
+  --bg-sidebar: #F7F6F2;          /* Restrained warm sidebar */
+
+  /* Border & Divider Tokens */
+  --border-subtle: #EBE8E0;       /* Ultra soft boundary */
+  --border-default: #E2DFD7;      /* Standard card border */
+  --border-strong: #C8C4B8;       /* Emphasized divider */
+  --border-focus: #D97706;        /* Warm saffron focus ring */
+
+  /* Typography & Text Tokens (Charcoal & Gray - Never #000000) */
+  --text-primary: #2C2D31;        /* Deep charcoal (highest contrast) */
+  --text-secondary: #595D66;      /* Muted charcoal */
+  --text-muted: #7E828D;          /* Tertiary gray */
+  --text-disabled: #A8ABB3;       /* Disabled controls */
+  --text-inverse: #FAF9F6;        /* Text on dark saffron/red buttons */
+
+  /* Saffron & Gold Brand Accents */
+  --accent-gold: #D97706;         /* Primary saffron brand color */
+  --accent-gold-hover: #B45309;   /* Darker saffron on hover */
+  --accent-gold-light: #FDE68A;   /* Light amber tint */
+  --accent-gold-subtle: #FEF3C7;  /* Amber pill/badge background */
+  --accent-gold-dark: #92400E;    /* Deep saffron text */
+  --accent-saffron: #EA580C;      /* Secondary warm saffron */
+
+  /* Status Colors (Operational Semantics - Zero Blue) */
+  /* Green: Verified / Operational / Normal */
+  --status-green-bg: #F0FDF4;
+  --status-green-border: #BBF7D0;
+  --status-green-text: #15803D;
+  --status-green-badge: #16A34A;
+
+  /* Amber / Orange: Caution / Delayed / Moderate Risk */
+  --status-amber-bg: #FFFBEB;
+  --status-amber-border: #FDE68A;
+  --status-amber-text: #B45309;
+  --status-amber-badge: #D97706;
+
+  /* Red: Critical / Disrupted / Closed / SOS Emergency */
+  --status-red-bg: #FEF2F2;
+  --status-red-border: #FECACA;
+  --status-red-text: #991B1B;
+  --status-red-badge: #DC2626;
+
+  /* Neutral: Unknown / Unverified / Stale / Offline */
+  --status-neutral-bg: #F3F4F6;
+  --status-neutral-border: #E5E7EB;
+  --status-neutral-text: #4B5563;
+  --status-neutral-badge: #6B7280;
+
+  /* Typography */
+  --font-family-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  --font-family-heading: 'Outfit', 'Inter', system-ui, sans-serif;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.8125rem;  /* 13px */
+  --text-base: 0.9375rem;/* 15px */
+  --text-md: 1.0625rem;  /* 17px */
+  --text-lg: 1.25rem;    /* 20px */
+  --text-xl: 1.5rem;     /* 24px */
+  --text-2xl: 1.875rem;  /* 30px */
+  --text-3xl: 2.25rem;   /* 36px */
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;    /* 4px */
+  --space-2: 0.5rem;     /* 8px */
+  --space-3: 0.75rem;    /* 12px */
+  --space-4: 1rem;       /* 16px */
+  --space-5: 1.25rem;    /* 20px */
+  --space-6: 1.5rem;     /* 24px */
+  --space-8: 2rem;       /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows (Soft Warm Glow - Never Deep Black) */
+  --shadow-sm: 0 1px 2px rgba(80, 75, 65, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(80, 75, 65, 0.07), 0 2px 4px -2px rgba(80, 75, 65, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(80, 75, 65, 0.08), 0 4px 6px -4px rgba(80, 75, 65, 0.04);
+  --shadow-warm-focus: 0 0 0 3px rgba(217, 119, 6, 0.2);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout Constants */
+  --header-height: 64px;
+  --sidebar-width: 260px;
+  --sidebar-collapsed-width: 72px;
+  --max-content-width: 1440px;
+}
