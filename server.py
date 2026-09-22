@@ -824,7 +824,7 @@ if __name__ == "__main__":
     )
 
     server = ThreadedHTTPServer(
-        ("", PORT),
+        ("0.0.0.0", PORT),
         handler_class
     )
 
